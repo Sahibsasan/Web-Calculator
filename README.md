@@ -2,7 +2,9 @@
 
 A simple and responsive web-based calculator built using HTML, CSS, and JavaScript.
 This project helped me understand DOM manipulation, event handling, and basic JavaScript logic.
-
+<br>
+Live Preview- https://web-calcy.netlify.app/
+<hr>
 🚀 Features
 
 Basic arithmetic operations:
