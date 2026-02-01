@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* ❗ missing semicolon earlier */
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(97, 97, 216);
+}
+
+.main-div{
+    height: 570px;
+    width: 330px;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(5, 2, 14);
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+/* SCREEN */
+.screen{
+    height: 120px;
+    width: 100%;
+    background-color: rgb(24, 131, 99);
+    font-size: 32px;
+    text-align: right;
+    border-radius: 20px;
+    line-height: 120px;       /* ❗ fixed */
+    padding-right: 15px;
+    color: white;
+}
+
+/* BUTTON AREA */
+.number-div{
+    padding: 20px 1px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* center alignment */
+    gap: 15px;                /* better spacing */
+}
+
+/* BUTTONS */
+.number-div li{
+    list-style: none;
+    height: 70px;
+    width: 60px;             
+    background: #444;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 30%;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+    transition: border 1s ease-in-out;
+}
+
+.number-div li:hover{
+    /* background-color: rgb(97, 97, 216); */
+    border: solid 2px white;
+}
+
+/* EQUAL BUTTON */
+.equal{
+    background-color: rgb(24, 131, 99);
+    
+}
+
+.equal:hover{
+    background-color: rgb(97, 97, 216);
+    border: solid 2px white;
+}
+
+/* MATH BUTTONS */
+.math{
+    background-color: rgb(216, 97, 97);
+}
+
+.math:hover{
+    background-color: rgb(255, 50, 50);
+}
+
+/* CLEAR BUTTON */
+.clear{
+    height: 60px;
+    width: 100%;
+    position: absolute;;
+    bottom: 0;               /* ❗ better than top:590px */
+    left: 0;
+    background-color: rgb(20, 25, 48);
+    border: none;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.clear:hover{
+    background-color: rgb(10, 4, 24);
+}
