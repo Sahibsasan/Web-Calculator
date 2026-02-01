@@ -38,7 +38,7 @@ body{
 
 /* BUTTON AREA */
 .number-div{
-    padding: 20px 1px;
+    padding: 20px 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
